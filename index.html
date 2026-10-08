@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KyKy’s Animal Shelter</title>
+
+    <!-- Friendly rounded font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-paw">🐾</span>
+            <div>
+                <h2>KyKy’s</h2>
+                <span>Animal Shelter</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#animals">Adopt</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+       
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="small-label">🐾 FIND YOUR NEW BEST FRIEND</span>
+
+            <h1>
+                Every paw deserves
+                <span>a loving home.</span>
+            </h1>
+
+           
+            <div class="hero-buttons">
+                <a href="#animals" class="primary-button">
+                    Meet the Animals
+                </a>
+
+             </div>
+
+            <div class="hero-stats">
+                <div>
+                    <strong>5</strong>
+                    <span>Pets Available</span>
+                </div>
+
+                <div>
+                    <strong>♡</strong>
+                    <span>Forever Homes</span>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Lots of Love</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="blob"></div>
+            <div class="floating-card card-one">🐶</div>
+            <div class="floating-card card-two">🐱</div>
+
+            <div class="pet-circle">
+                <img
+                    src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80"
+                    alt="Happy dog">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ADOPTION SECTION -->
+    <section class="animals-section" id="animals">
+
+        <div class="section-heading">
+            <div>
+                <span class="small-label">MEET OUR RESIDENTS</span>
+                <h2>Looking for a <span>forever home</span></h2>
+            </div>
+
+                   </div>
+
+
+       
+
+        <!-- ANIMAL CARDS -->
+        <div class="animal-grid" id="animalGrid">
+
+            <!-- MAX -->
+            <article class="animal-card" data-type="dog" data-name="Max">
+                <div class="animal-image">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEp7q19-kg-syXt9T1c9WuIKsLCw8RnxUeByLMjDv09qDRaDIImXblts6U&s=10"
+                        alt="Max the dog">
+                    <span class="animal-type">DOG</span>
+                </div>
+
+                <div class="animal-info">
+                    <div class="name-row">
+                        <h3>Max</h3>
+                        <span class="gender">♂</span>
+                    </div>
+
+                    <p class="animal-details">🐶 Golden Retriever · 2 years</p>
+                    <p class="description">
+                        Max is a playful sweetheart who loves walks and belly rubs.
+                    </p>
+
+                    <button class="adopt-button" onclick="openModal('Max')">
+                        Meet Max <span>→</span>
+                    </button>
+                </div>
+            </article>
+
+
+            <!-- MIMING -->
+            <article class="animal-card" data-type="cat" data-name="Miming">
+                <div class="animal-image">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfsGrN5dEfm9XpMTHXWNja87_rIycNXe9vQbk4UIU_p0dY_DC6RC02Ov4&s=10"
+                        alt="Miming the cat">
+                    <span class="animal-type">CAT</span>
+                </div>
+
+                <div class="animal-info">
+                    <div class="name-row">
+                        <h3>Miming</h3>
+                        <span class="gender">♀</span>
+                    </div>
+
+                    <p class="animal-details">🐱 Domestic Shorthair · 1 year</p>
+                    <p class="description">
+                        Miming is a gentle little explorer who loves sunny windowsills.
+                    </p>
+
+                    <button class="adopt-button" onclick="openModal('Miming')">
+                        Meet Miming <span>→</span>
+                    </button>
+                </div>
+            </article>
+
+
+            <!-- Butchoy -->
+            <article class="animal-card" data-type="dog" data-name="Butchoy">
+                <div class="animal-image">
+                    <img
+                        src="https://i.pinimg.com/736x/fe/06/2b/fe062b886ee8d17ac6313ad940ebed1d.jpg"
+                        alt="Butchoy the dog">
+                    <span class="animal-type">DOG</span>
+                </div>
+
+                <div class="animal-info">
+                    <div class="name-row">
+                        <h3>Butchoy</h3>
+                        <span class="gender">♂</span>
+                    </div>
+
+                    <p class="animal-details">🐶 Aspin · 10 months</p>
+                    <p class="description">
+                        Butchoy is an energetic boy who enjoys playing and making friends.
+                    </p>
+
+                    <button class="adopt-button" onclick="openModal('Butchoy')">
+                        Meet Butchoy <span>→</span>
+                    </button>
+                </div>
+            </article>
+
+
+            <!-- MOCHI -->
+            <article class="animal-card" data-type="cat" data-name="Mochi">
+                <div class="animal-image">
+                    <img
+                        src="https://mustsharenews.com/wp-content/uploads/2021/05/persian-adoption-1.jpg"
+                        alt="Mochi the cat">
+                    <span class="animal-type">CAT</span>
+                </div>
+
+                <div class="animal-info">
+                    <div class="name-row">
+                        <h3>Mochi</h3>
+                        <span class="gender">♀</span>
+                    </div>
+
+                    <p class="animal-details">🐱 Persian Mix · 2 years</p>
+                    <p class="description">
+                        Mochi is a fluffy cuddle bug who would love a quiet home.
+                    </p>
+
+                    <button class="adopt-button" onclick="openModal('Mochi')">
+                        Meet Mochi <span>→</span>
+                    </button>
+                </div>
+            </article>
+
+
+            <!-- BUDOY -->
+            <article class="animal-card" data-type="dog" data-name="Budoy">
+                <div class="animal-image">
+                    <img
+                        src="https://assets3.thrillist.com/v1/image/2552390/566x537/scale;webp=auto;jpeg_quality=60.jpg"
+                        alt="Buddy the dog">
+                    <span class="animal-type">DOG</span>
+                </div>
+
+                <div class="animal-info">
+                    <div class="name-row">
+                        <h3>Budoy</h3>
+                        <span class="gender">♂</span>
+                    </div>
+
+                    <p class="animal-details">🐶 Labrador-Aspin Mix · 4 years</p>
+                    <p class="description">
+                        Budoy is a loyal, calm companion who loves people and treats.
+                    </p>
+
+                    <button class="adopt-button" onclick="openModal('Budoy')">
+                        Meet Budoy <span>→</span>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="no-results" id="noResults">
+            <span>🐾</span>
+            <h3>No pets found</h3>
+            <p>Try searching for another name or category.</p>
+        </div>
+
+    </section>
+
+
+       <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div>
+            <span class="small-label">LET’S CONNECT</span>
+            <h2>Ready to meet your <span>new best friend?</span></h2>
+            <p>
+                Have questions about adoption? We’d love to hear from you!
+            </p>
+        </div>
+
+        <div class="contact-card">
+            <div>
+                <span>📍</span>
+                <div>
+                    <strong>Visit Us</strong>
+                    <p>KyKy’s Animal Shelter</p>
+                </div>
+            </div>
+
+            <div>
+                <span>✉️</span>
+                <div>
+                    <strong>Email Us</strong>
+                    <p>hello@kykysanimals.com</p>
+                </div>
+            </div>
+
+            <div>
+                <span>📞</span>
+                <div>
+                    <strong>Call Us</strong>
+                    <p>+63 900 123 4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ADOPTION MODAL -->
+    <div class="modal-overlay" id="adoptionModal">
+        <div class="modal">
+
+            <button class="close-modal" onclick="closeModal()">×</button>
+
+            <div class="modal-paw">🐾</div>
+
+            <h2>Interested in <span id="petName">Max</span>?</h2>
+
+            <p>
+                Tell us a little about yourself and we'll get in touch
+                about the adoption process.
+            </p>
+
+            <form id="adoptionForm">
+
+                <label for="applicantName">Your Name</label>
+                <input
+                    type="text"
+                    id="applicantName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+                <label for="message">Why would you like to adopt?</label>
+                <textarea
+                    id="message"
+                    placeholder="Tell us a little about your home..."
+                    rows="4"
+                    required
+                ></textarea>
+
+                <button type="submit" class="submit-button">
+                    Send Adoption Request 💗
+                </button>
+
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <span>🎉</span>
+                <h3>Application Sent!</h3>
+                <p>
+                    Thank you for your interest. KyKy’s Animal Shelter
+                    will get back to you soon.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
